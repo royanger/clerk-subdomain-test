@@ -1,5 +1,6 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </SignedOut>
       <SignedIn>
         <UserButton />
+        <Link href="/profile">Profile</Link>
       </SignedIn>
     </main>
   );
